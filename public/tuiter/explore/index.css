@@ -2,13 +2,6 @@
     background-color: black;
     font-family: arial;
 }
-.wd-margin-left {
-    margin-left: 16px;
-}
-
-.wd-margin-top {
-    margin-top: 10px;
-}
 
 * {
     box-sizing: border-box;
@@ -27,69 +20,65 @@
     height: 35px;
     margin-left: 16px;
     padding-left: 2.5%;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .wd-settings-icon-color{
     color: rgb(29,161,242);
 }
 
-.wd-height-90 {
-    height: 90px;
-}
-.wd-height-35 {
-    height: 35px;
-    margin-bottom: 15px;
-}
-.wd-height-100 {
-    height: 100px;
-}
-.wd-width-95 {
-    width: 95px;
-}
-.wd-width-5 {
-    width: 5px;
-}
-
-.float-right {
+.wd-right {
     float: right;
     height: 100px;
     width: 100px;
     border-radius: 15px;
 }
 
-/* Create two equal columns that floats next to each other */
-.column6 {
+.wd-float-right {
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.wd-float-right-icon{
+    height: 20px;
+    width: 100px;
+}
+
+.wd-news-img{
     float: left;
     width: 10%;
 }
-.column5 {
+
+.wd-news-tuit {
     display: table;
     border-collapse: collapse;
     float: left;
     width: 90%;
     padding: 10px;
 }
-.wd-column1 {
+
+.wd-emp-column {
     float: left;
     width: 5%;
     padding: 10px;
-    height: 700px; /* Should be removed. Only for demonstration */
+    height: 700px;
     background-color:black;
 }
-.wd-column2 {
+.wd-main-body {
     display: table;
     border-collapse: collapse;
     float: left;
     width: 95%;
     padding: 10px;
-    height: 700px; /* Should be removed. Only for demonstration */
+    height: 700px;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(47, 51, 54);
 }
 
-.column3 {
+.wd-search-div-main {
     float: left;
     width: 100%;
     height: auto;
@@ -97,9 +86,10 @@
     border-width: 2px;
     border-style: solid;
     border-color: rgb(47, 51, 54);
+
 }
 
-.column4 {
+.wd-after-navbar{
     float: left;
     width: 100%;
     height: 10px;
@@ -108,24 +98,23 @@
     border-color: rgb(47, 51, 54);
 }
 
-/* Clear floats after the columns */
-.row:after {
+.wd-row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.main-top-nav {
+.wd-main-top-nav {
     padding-bottom: 0px !important;
 }
 
-.topnav {
+.wd-navbar {
     overflow: hidden;
     background-color: black;
     height: 45px;
 }
 
-.topnav a {
+.wd-navbar a {
     color: rgb(110,118,125);
     text-align: center;
     padding: 16px;
@@ -134,13 +123,14 @@
     height: 45px;
     font-family: arial;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.topnav a:hover {
+.wd-navbar a:hover {
     color: rgb(29,161,242);
 }
 
-.topnav a:focus-within {
+.wd-navbar a:focus-within {
     border-bottom: solid rgb(29,161,242) 3px;
     color: rgb(29,161,242);
 }
@@ -161,7 +151,8 @@ a {
 
 .wd-search-div{
     position: relative;
-
+    width: 90%;
+    height:100%;
 }
 
 .wd-placeholder{
@@ -169,17 +160,23 @@ a {
 }
 
 .wd-settings{
-    color: rgb(29,161,242);
-    position: absolute;
-    left: 1300px;
-    top: 9px;
+    position: relative;
+    float:right;
+    margin-right: 16px;
 }
 
 .wd-ellipsis{
     color:white;
+    margin-left: 50px;
 }
 
 .wd-ellipsis2{
     padding-left: 1245px;
     color:white;
+    margin-left: 50px;
+}
+
+.wd-light-ellipsis{
+    color: rgb(110, 118, 125);
+    padding-left: 50px;
 }
