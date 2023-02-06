@@ -11,7 +11,7 @@
     display: table;
     border-collapse: collapse;
     float: left;
-    width: 50%;
+    width: 30%;
     padding: 10px;
     height: 610px;
     border-width: 1px;
@@ -21,7 +21,7 @@
 
 .wd-main-header {
     float: left;
-    width: 100%;
+    width: 600px;
     height: 80px;
     border-width: 2px;
     border-style: solid;
@@ -48,7 +48,7 @@
 
 .wd-main-body{
     float: left;
-    width: 700px;
+    width: 600px;
     height: 630px;
     border-width: 2px;
     border-style: solid;
@@ -173,7 +173,7 @@
 
 .wd-ellipsis{
     color:lightskyblue;
-    margin-left: 660px;
+    margin-left: 550px;
 }
 
 .wd-text-color {
