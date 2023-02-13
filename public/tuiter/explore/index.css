@@ -24,6 +24,18 @@
     color: white;
 }
 
+.wd-search-bar2 {
+    border-radius: 50px;
+    border: none;
+    float: left;
+    width: 92%;
+    height: 35px;
+    margin-left: 16px;
+    padding-left: 2.5%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
 .wd-settings-icon-color{
     color: rgb(29,161,242);
 }
@@ -110,7 +122,7 @@
 
 .wd-navbar {
     overflow: hidden;
-    background-color: black;
+    /*background-color: black;*/
     height: 45px;
 }
 
@@ -179,4 +191,67 @@ a {
 .wd-light-ellipsis{
     color: rgb(110, 118, 125);
     padding-left: 50px;
+}
+
+.form-control{
+    border-radius: 50px;
+}
+.wd-left-bar {
+    width: 75%;
+    float: right;
+}
+
+@media (min-width: 0px)
+and (max-width: 576px) {
+    p {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+@media (min-width: 576px)
+and (max-width: 768px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+}
+@media (min-width: 768px)
+and (max-width: 992px) {
+    body {
+        background-color: pink;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
+@media (min-width: 992px)
+and (max-width: 1200px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
+@media (min-width: 1200px)
+and (max-width: 1400px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
 }
