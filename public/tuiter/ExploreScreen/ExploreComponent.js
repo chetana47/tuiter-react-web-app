@@ -7,7 +7,7 @@ const ExploreComponent = () => {
                 <div class="col-11" >
                     <div class="form-group has-search input-group" style="align-items: center;">
                          <span class="fa fa-search form-control-feedback" style="z-index: 10; position: absolute; padding-left: 10px; color: black;"></span>
-                        <input type="text" class="form-control border-end-0 rounded-pill bg-white" placeholder="Search Twitter" style="border:0;padding-left: 45px";>
+                        <input type="text" class="form-control border-end-0 rounded-pill bg-white" placeholder="Search Tuiter" style="border:0;padding-left: 45px";>
                     </div>
                 </div>
                 <div class="col-1" style="padding-bottom: 15px;" >
