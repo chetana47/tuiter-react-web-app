@@ -1,0 +1,120 @@
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.fa-2x.override-bs {
+    font-size: 1.5em;
+    color: black;
+}
+
+.wd-image-design {
+    float: right;
+    height: 90px;
+    width: 90px;
+    border-radius: 15px;
+    margin:5px;
+}
+
+.img-fluid.override-ig {
+    margin: 0px;
+    padding: 10px;
+}
+
+.list-group-item.lgi-override {
+    border: 0px solid white;
+    height:60px;
+}
+
+.list-group-item.lgi-override.active {
+    border: 0px solid white;
+    height:60px;
+    z-index: 2;
+    color: #090909;
+    font-weight: bold;
+    background-color: white;
+}
+
+.row.row-override {
+    border: 0px solid white;
+}
+.border.border-override {
+    border: 0px solid white;
+}
+
+.navbar-inner.wd-topnav a {
+    text-align: center;
+    padding-right: 26px;
+    font-size: 15px;
+    display: inline-block;
+    height: 45px;
+    font-family: arial;
+    font-color: black;
+    text-decoration: none;
+    color:gray;
+}
+
+.nav-link.active.nla-override {
+    border-bottom: solid rgb(29,161,242) 3px;
+    font-weight: bold;
+    color:black;
+    padding: 20px;
+}
+.navbar-inner.wd-topnav {
+    overflow: hidden;
+    height: 45px;
+    /*width: 100%;*/
+    margin-left: 15px;
+    font-weight: bold;
+}
+.border-override {
+    border:0;
+}
+.col-3.wd-image{
+    padding : 20px;
+    border-radius: 20%;
+}
+.btn.btn-primary.text-center.btn-block.rounded-pill.mt-2.follow-btn-override {
+    background-color:black;
+    font-weight:bold;
+    border:0;
+    width:100%;
+}
+.col-9.bg-light.left-col-override {
+    border-radius: 15px;
+    border: 2px solid #f8f9fa;
+    padding: 9px;
+    padding-bottom: 15px;
+}
+.wd-show-more {
+    margin-left:20px;
+    text-decoration:none;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.fas.fa-check-circle.fa-check-circle-override {
+    color: blue;
+}
+.col-9.pt-2.pt-override {
+    padding: 15px;
+}
+
+.fa-2x.override-bs {
+    font-size: 1.5em;
+    color: black;
+}
+
+.form-control.border-end-0.rounded-pill.bg-light.wd-search-bar-override {
+    border:0;
+}

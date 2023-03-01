@@ -410,7 +410,7 @@ p#id-selector-2 {
     display: flex;
 }
 
-.flex-container > .flex-box {
+.flex-container-eigth > .flex-circle {
     flex-basis: 100%;
 
 }
@@ -425,65 +425,27 @@ p#id-selector-2 {
     border-radius: 50%;
     display: inline-block;
 }
-.flex-box-1 {
+.flex-circle-1 {
     background-color: yellow;
     font-size: 5px;
     text-align: center;
     height: 80px;
     width: 80px;
 }
-.flex-box-2 {
+.flex-circle-2 {
     background-color: blue;
     color: white;
     text-align: center;
     height: 120px;
     width: 120px;
 }
-.flex-box-3 {
+.flex-circle-3 {
     background-color: red;
     color: white;
     text-align: center;
     height: 180px;
     width: 180px;
 }
-
-@media (min-width: 0px)
-and (max-width: 600px) {
-    h4 {
-        background-color: mediumpurple;
-        color: black;
-    }
-    .media-query {
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        font-style: italic;
-    }
-}
-@media (min-width: 600px)
-and (max-width: 1200px) {
-    h4 {
-        background-color: greenyellow;
-        color: black;
-    }
-    .media-query {
-        background-color: yellow;
-        color: black;
-        font-family: "Kohinoor Bangla";
-    }
-}
-@media (min-width: 1200px)
-and (max-width: 1800px) {
-    h4 {
-        background-color: gray;
-        color: black;
-    }
-    .media-query {
-        background-color: deeppink;
-        color: black;
-    }
-}
-
 
 
 
