@@ -17,27 +17,27 @@ const NavigationSidebar = () => {
             <Link to="/" className="list-group-item">
                 Labs
             </Link>
-            <a className={`list-group-item
+            <a href={"#"} className={`list-group-item
                     ${active === 'notifications' ? 'active' : ''}`}>
                 Notifications
             </a>
-            <a className={`list-group-item
+            <a href={"#"} className={`list-group-item
                     ${active === 'messages' ? 'active' : ''}`}>
                 Messages
             </a>
-            <a className={`list-group-item
+            <a href={"#"} className={`list-group-item
                     ${active === 'bookmarks' ? 'active' : ''}`}>
                 Bookmarks
             </a>
-            <a className={`list-group-item
+            <a href={"#"} className={`list-group-item
                     ${active === 'lists' ? 'active' : ''}`}>
                 Lists
             </a>
-            <a className={`list-group-item
+            <a href={"#"} className={`list-group-item
                     ${active === 'profile' ? 'active' : ''}`}>
                 Profile
             </a>
-            <a className={`list-group-item
+            <a href={"#"} className={`list-group-item
                     ${active === 'more' ? 'active' : ''}`}>
                 More
             </a>

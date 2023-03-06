@@ -1,5 +1,4 @@
-import {Link}
-    from "react-router-dom";
+
 import Classes from "./classes";
 import Nav from "../../nav";
 import Styles from "./styles";
