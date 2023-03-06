@@ -67,7 +67,7 @@ const HomeTweets = (
                                 <span className="wd-gray-handle" style={{width: "fit-content", paddingLeft: "0px",paddingRight: "3px",paddingBottom:"8px",fontWeight:"bold"}}>.</span>
                                 <span className="wd-gray-handle"
                                       style={{width: "fit-content",paddingLeft: "0px"}}>{post.time} </span>
-                                <div style={{width: "fit-content", marginLeft: "auto"}}><a href="#">
+                                <div style={{width: "fit-content", marginLeft: "auto"}}><a href="/#">
                                     <i className="fas fa-ellipsis wd-black-color"></i></a></div>
 
                                 <span
@@ -115,7 +115,7 @@ const HomeTweets = (
                         </div>
                         <div className="wd-icons">
                             <div className="wd-icon-style">
-                                <a href="#"> <i className="fas fa-comment wd-black-color"></i></a>
+                                <a href="/#"> <i className="fas fa-comment wd-black-color"></i></a>
                                 <span
                                     style={{
                                         fontSize: "15px",
@@ -123,7 +123,7 @@ const HomeTweets = (
                                     }}>&nbsp; {post.nooftweets}</span>
                             </div>
                             <div className="wd-icon-style">
-                                <a href="#"><i className="fas fa-retweet wd-black-color"></i></a>
+                                <a href="/#"><i className="fas fa-retweet wd-black-color"></i></a>
                                 <span
                                     style={{
                                         fontSize: "15px",
@@ -131,7 +131,7 @@ const HomeTweets = (
                                     }}>&nbsp; {post.retweets}</span>
                             </div>
                             <div className="wd-icon-style">
-                                <a href="#"><i className="fas fa-heart wd-black-color"></i></a>
+                                <a href="/#"><i className="fas fa-heart wd-black-color"></i></a>
                                 <span
                                     style={{
                                         fontSize: "15px",
@@ -139,7 +139,7 @@ const HomeTweets = (
                                     }}>&nbsp; {post.likes}</span>
                             </div>
                             <div className="wd-icon-style">
-                                <a href="#"><i className="fas fa-upload wd-black-color"></i></a>
+                                <a href="/#"><i className="fas fa-upload wd-black-color"></i></a>
                             </div>
                         </div>
                     </div>
