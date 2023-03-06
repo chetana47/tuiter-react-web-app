@@ -1,24 +1,12 @@
 import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
-import {Link} from "react-router-dom";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
-import Asd from "./labs/a6/test/Asd"
-import Rew from "./labs/a6/test/Rew"
 function App() {
   return (
       <BrowserRouter>
           <div className="container">
-          {/*<Routes>*/}
-          {/*    <Route index*/}
-          {/*        // path="/labs"*/}
-          {/*           element={<Labs/>}/>*/}
-          {/*    <Route path="/hello"*/}
-          {/*           element={<HelloWorld/>}/>*/}
-          {/*    <Route path="/tuiter"*/}
-          {/*           element={<Tuiter/>}/>*/}
-          {/*</Routes>*/}
               <Routes>
                   <Route index element={<Labs/>}/>
                   <Route path="/hello" element={<HelloWorld/>}/>
