@@ -6,7 +6,8 @@ import {Route, Routes} from "react-router";
 
 function Tuiter() {
     return (
-        <div className="row mt-2">
+        <div className="container-fluid">
+        <div className="row mt-2" >
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                 <NavigationSidebar active="explore"/>
             </div>
@@ -17,6 +18,7 @@ function Tuiter() {
                     <Route path="explore" element={<ExploreComponent/>}/>
                 </Routes>
              </div>
+        </div>
         </div>
     );
 }

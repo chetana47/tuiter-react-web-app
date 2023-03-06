@@ -56,6 +56,7 @@ const HomePosts = (
                                  style={{width: "fit-content",paddingLeft: "0px"}}>{post.time} </div>
                             <div style={{marginLeft: "auto", width: "fit-content"}}><a href="/#"> <i
                                 className="fas fa-ellipsis wd-black-color"></i></a></div>
+                            <br/>
                             <div
                                 style={{fontSize: "15px", marginTop:"5px"}}>{post.description}</div>
                         </div>
@@ -64,7 +65,7 @@ const HomePosts = (
                         </div>
                         <div className="wd-icons">
                             <div className="wd-icon-style">
-                                <a href="/#"> <i className="fas fa-comment wd-black-color"></i></a>
+                                <a href="/#"> <i className="far fa-comment wd-black-color"></i></a>
                                 <span
                                     style={{
                                         fontSize: "15px",
@@ -80,7 +81,7 @@ const HomePosts = (
                                     }}>&nbsp; {post.retweets}</span>
                             </div>
                             <div className="wd-icon-style">
-                                <a href="/#"><i className="fas fa-heart wd-black-color"></i></a>
+                                <a href="/#"><i className="far fa-heart wd-black-color"></i></a>
                                 <span
                                     style={{
                                         fontSize: "15px",

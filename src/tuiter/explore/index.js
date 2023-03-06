@@ -1,9 +1,13 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
+import WhoToFollowList from "../who-to-follow-list";
 const ExploreComponent = () => {
     return(
         <div className="container-fluid">
+        <div className="row" style={{width:"1000px"}}>
+        <div className=" col-7">
+        <div>
             <div className="row">
                 <div className="col-11 position-relative">
                     <input placeholder="Search Tuiter"
@@ -33,6 +37,12 @@ const ExploreComponent = () => {
                     SpaceX Starship</h1>
             </div>
             <PostSummaryList/>
+        </div>
+        </div>
+        <div className="col-5">
+        <WhoToFollowList/>
+        </div>
+        </div>
         </div>
     );
 };
