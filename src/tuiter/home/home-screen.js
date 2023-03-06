@@ -60,7 +60,7 @@ const HomePosts = (
                                 style={{fontSize: "15px", marginTop:"5px"}}>{post.description}</div>
                         </div>
                         <div className="wd-image-body">
-                            <img className="wd-lorem-img" src={post.tweetimage} alt={"Tweet Image"}/>
+                            <img className="wd-lorem-img" src={post.tweetimage} alt={"Tweet"}/>
                         </div>
                         <div className="wd-icons">
                             <div className="wd-icon-style">
