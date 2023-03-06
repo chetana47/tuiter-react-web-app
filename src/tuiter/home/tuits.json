@@ -1,0 +1,16 @@
+[
+{
+  "_id" : "123",
+"userName": "SpaceX",
+"time": "23h",
+"handle": "@SpaceX",
+"description": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the Moon ",
+"imagetitle": "",
+"imagedescription": "",
+"nooftweets": "4.2k",
+"retweets": "3.5k",
+"likes": "37.5k",
+"imagepath": "../../images/spacex.png",
+"tweetimage": "../../images/elon.jpeg"
+}
+]
