@@ -13,7 +13,7 @@ const TuitStats = (tuitStat) => {
                     <span style={{ fontSize: "15px", paddingRight: "12px"}}>&nbsp; {tuitStat.retuits}</span>
                 </div>
                 <div className="col-sm wd-icon-style">
-                    <a onClick={tuitStat.handleLike}><i className={tuitStat.liked?`fa-solid fa-heart wd-red-like`:`fa-regular fa-heart wd-black-like`}></i></a>
+                    <a href={"/#"} onClick={tuitStat.handleLike}><i className={tuitStat.liked?`fa-solid fa-heart wd-red-like`:`fa-regular fa-heart wd-black-like`}></i></a>
                     <span style={{ fontSize: "15px", paddingRight: "12px"}}>&nbsp; {tuitStat.likes}</span>
                 </div>
                 <div className="col-sm wd-icon-style">

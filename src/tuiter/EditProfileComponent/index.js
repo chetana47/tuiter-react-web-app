@@ -1,4 +1,4 @@
-import {Provider, useDispatch, useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import React, {useState} from "react";
 import {updateProfile} from "../reducers/profile";
 import {Link} from "react-router-dom";
@@ -87,7 +87,7 @@ function EditProfileComponent() {
 
                 <div className="parent">
                     <div className="image1" >
-                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg" alt={"Profile Image"}/>
+                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg" />
                     </div>
                     <div className="image2">
                         <img className="rounded-circle" height={125} alt={"avatarIcon"} src="../../images/samantha.jpeg"/>

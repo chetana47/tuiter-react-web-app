@@ -1,4 +1,4 @@
-import {Provider, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import React from "react";
 import {Link} from "react-router-dom";
 
@@ -35,7 +35,7 @@ function ProfileComponent() {
 
                 <div className="parent">
                     <div className="image1" >
-                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg" alt={"Profile Image"}/>
+                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg"/>
                     </div>
                     <div className="image2">
                         <img className="rounded-circle" height={125} alt={"avatarIcon"} src="../../images/samantha.jpeg"/>

@@ -1,7 +1,4 @@
 import React from "react";
-import tuits from './tuits.json';
-import HomePosts from "./home-screen";
-import HomeTweets from "./home-tweet";
 import WhatsHappening from "./whats-happening";
 import TuitItem from "../tuits/TuitItem";
 

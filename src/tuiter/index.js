@@ -14,7 +14,6 @@ import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import TuitList from "./tuits/TuitsList";
 import ProfileComponent from "./ProfileComponent";
 import EditProfileComponent from "./EditProfileComponent";
 const store = configureStore(

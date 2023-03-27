@@ -48,6 +48,7 @@ const tuitsSlice = createSlice({
                                                             tuit.likes = tuit.likes + 1;
                                                         }
                                                    }
+                                                   return tuit;
                                                });
                                        }
                                    }

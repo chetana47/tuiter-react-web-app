@@ -1,7 +1,6 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
-import WhoToFollowList from "../who-to-follow-list";
 const ExploreComponent = () => {
     return(
         <div className="container-fluid">
