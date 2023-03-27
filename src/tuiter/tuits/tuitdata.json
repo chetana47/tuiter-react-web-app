@@ -1,0 +1,42 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "../../images/spacex.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 5392,
+    "likes": 2935,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  }, {
+  "_id": 899,
+  "topic": "Elon Musk",
+  "image": "../../images/elon.jpeg",
+  "userName": "Elon Musk",
+  "handle": "@elonmusk",
+  "time": "6h",
+  "title": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+  "liked": false,
+  "replies": 934,
+  "retuits": 848,
+  "likes": 0,
+  "tuit": "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere. Best way to fight misinformation is to respond with accurate information, not censorship"
+},
+  {
+    "_id": 999,
+    "image": "../../images/relativityspace.png",
+    "topic": "news",
+    "userName": "New York Post",
+    "handle": "@nypost",
+    "time": "21h",
+    "title": "ChatGPT to revolutionize the news world",
+    "liked": true,
+    "replies": 738,
+    "retuits": 828,
+    "likes": 9293,
+    "tuit": "Man claiming to be ‘Baby Danielle’ breaks into day care and asks staff to ‘play along’ as he steals diapers: police https://trib.al/UwHj5JR. Brooklyn lawmaker Andrew Gounardes wants 25 cent tax for Amazon deliveries in NYC https://trib.al/1pI5PKx\n"
+  }]

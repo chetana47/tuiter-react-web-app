@@ -5,7 +5,7 @@ import WhoToFollowList from "../who-to-follow-list";
 const ExploreComponent = () => {
     return(
         <div className="container-fluid">
-        <div className="row" style={{width:"1000px"}}>
+        <div className="row" style={{width:"1200px"}}>
         <div className=" col-7">
         <div>
             <div className="row">
@@ -30,6 +30,12 @@ const ExploreComponent = () => {
                 <li className="nav-item">
                     <a href={"/#"} className="nav-link">News</a>
                 </li>
+                <li className="nav-item">
+                    <a href={"/#"} className="nav-link">Sports</a>
+                </li>
+                <li className="nav-item">
+                    <a href={"/#"} className="nav-link">Entertainment</a>
+                </li>
             </ul>
             <div className="position-relative mb-2">
                 <img src="/images/starship.jpeg" className="w-100" alt="StarShip"/>
@@ -39,9 +45,7 @@ const ExploreComponent = () => {
             <PostSummaryList/>
         </div>
         </div>
-        <div className="col-5">
-        <WhoToFollowList/>
-        </div>
+
         </div>
         </div>
     );
