@@ -38,11 +38,11 @@ const NavigationSidebar = () => {
                 <i className="fas fa-list-ul"></i> &nbsp;
                 Lists
             </a>
-            <a href={"/tuiter/profile"} className={`list-group-item
-                    ${active === 'profile' ? 'active' : ''}`}>
+            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
                 <i className="fas fa-user"></i> &nbsp;
                 Profile
-            </a>
+            </Link>
+
             <a href={"/#"} className={`list-group-item
                     ${active === 'more' ? 'active' : ''}`}>
                 <i className="fas fa-ellipsis-h"></i> &nbsp;
