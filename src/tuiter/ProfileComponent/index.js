@@ -7,18 +7,20 @@ function ProfileComponent() {
     const profile = useSelector(
         (state) => state.profile);
 
-    Date.prototype.toShortFormat = function() {
+    const formatDate = (date) => {
+
+        const newDate = date;
 
         const monthNames = ["Jan", "Feb", "Mar", "Apr",
                             "May", "Jun", "Jul", "Aug",
                             "Sep", "Oct", "Nov", "Dec"];
 
-        const day = this.getDate() + 1;
+        const day = newDate.getDate() + 1;
 
-        const monthIndex = this.getMonth();
+        const monthIndex = newDate.getMonth();
         const monthName = monthNames[monthIndex];
 
-        const year = this.getFullYear();
+        const year = newDate.getFullYear();
 
         return `${day} ${monthName} ${year}`;
     }
@@ -35,7 +37,7 @@ function ProfileComponent() {
 
                 <div className="parent">
                     <div className="image1" >
-                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg"/>
+                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg" alt={"profile"}/>
                     </div>
                     <div className="image2">
                         <img className="rounded-circle" height={125} alt={"avatarIcon"} src="../../images/samantha.jpeg"/>
@@ -74,7 +76,7 @@ function ProfileComponent() {
                                         style={{
                                             fontSize: "15px",
                                             paddingRight: "12px"
-                                        }}>&nbsp; Born {new Date(profile.dateOfBirth).toShortFormat()}</span>
+                                        }}>&nbsp; Born {formatDate( new Date(profile.dateOfBirth))}</span>
                                 </div>
                                 <div className="wd-icon-style-min">
                                     <i className="fa-solid fa-calendar-days wd-black-color"></i>
@@ -82,7 +84,7 @@ function ProfileComponent() {
                                         style={{
                                             fontSize: "15px",
                                             paddingRight: "12px"
-                                        }}>&nbsp; Joined {new Date(profile.dateJoined).toShortFormat()}</span>
+                                        }}>&nbsp; Joined {formatDate(new Date(profile.dateJoined))}</span>
                                 </div>
                             </div>
                             <div className="wd-icons-profile" style={{color:"grey"}}>

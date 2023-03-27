@@ -87,7 +87,7 @@ function EditProfileComponent() {
 
                 <div className="parent">
                     <div className="image1" >
-                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg" />
+                        <img className="wd-profile-image" style={{width: "100%"}} src="../../images/saturn.jpeg" alt={"profile"}/>
                     </div>
                     <div className="image2">
                         <img className="rounded-circle" height={125} alt={"avatarIcon"} src="../../images/samantha.jpeg"/>
