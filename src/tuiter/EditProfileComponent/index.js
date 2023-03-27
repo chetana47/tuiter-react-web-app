@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import React, {useState} from "react";
 import {updateProfile} from "../reducers/profile";
 import {Link} from "react-router-dom";
+import './index.css';
 
 function EditProfileComponent() {
 
