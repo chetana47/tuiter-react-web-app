@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from './tuitdata.json';
+import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const currentUser = {
     "userName": "NASA",
     "handle": "@nasa",
-    "image": "nasa.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1224px-NASA_logo.svg.png",
 };
 
 const templateTuit = {
@@ -17,10 +17,52 @@ const templateTuit = {
     "likes": 0,
 }
 
+const initialState = {
+    tuits: [],
+    loading: false
+}
 
 const tuitsSlice = createSlice({
                                    name: 'tuits',
-                                   initialState: tuits,
+                                   initialState,
+                                   extraReducers: {
+                                       [findTuitsThunk.pending]:
+                                           (state) => {
+                                               state.loading = true
+                                               state.tuits = []
+                                           },
+                                       [findTuitsThunk.fulfilled]:
+                                           (state, { payload }) => {
+                                               state.loading = false
+                                               state.tuits = payload
+                                           },
+                                       [findTuitsThunk.rejected]:
+                                           (state, action) => {
+                                               state.loading = false
+                                               state.error = action.error
+                                           },
+                                       [deleteTuitThunk.fulfilled] :
+                                           (state, { payload }) => {
+                                               state.loading = false
+                                               state.tuits = state.tuits
+                                                   .filter(t => t._id !== payload)
+                                           },
+                                       [createTuitThunk.fulfilled]:
+                                           (state, { payload }) => {
+                                               state.loading = false
+                                               state.tuits.push(payload)
+                                           },
+                                       [updateTuitThunk.fulfilled]:
+                                           (state, { payload }) => {
+                                               state.loading = false
+                                               const tuitNdx = state.tuits
+                                                   .findIndex((t) => t._id === payload._id)
+                                               state.tuits[tuitNdx] = {
+                                                   ...state.tuits[tuitNdx],
+                                                   ...payload
+                                               }
+                                           }
+                                   },
                                    reducers: {
                                        deleteTuit(state, action) {
                                            const index = state
@@ -29,30 +71,14 @@ const tuitsSlice = createSlice({
                                            state.splice(index, 1);
                                        },
                                        createTuit(state, action) {
-                                           console.log(action);
                                            state.unshift({
-                                             ...action.payload,
-                                             ...templateTuit,
-                                             _id: (new Date()).getTime(),
-                                         })
-                                       },
-                                       handleLike(state, action) {
-                                           console.log(action);
-                                           state.map(tuit => {
-                                                   if(tuit._id === action.payload) {
-                                                        if( tuit.liked ) {
-                                                            tuit.liked = false;
-                                                            tuit.likes = tuit.likes - 1;
-                                                        } else {
-                                                            tuit.liked = true;
-                                                            tuit.likes = tuit.likes + 1;
-                                                        }
-                                                   }
-                                                   return tuit;
-                                               });
+                                                             ...action.payload,
+                                                             ...templateTuit,
+                                                             _id: (new Date()).getTime(),
+                                                         })
                                        }
                                    }
                                });
 
-export const {createTuit, deleteTuit, handleLike} = tuitsSlice.actions;
+export const {createTuit, deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
