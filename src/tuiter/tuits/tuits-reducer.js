@@ -4,13 +4,13 @@ import tuits from './tuitdata.json';
 const currentUser = {
     "userName": "NASA",
     "handle": "@nasa",
-    "image": "nasa.png",
+    "image": "nasa2.png",
 };
 
 const templateTuit = {
     ...currentUser,
     "topic": "Space",
-    "time": "2h",
+    "time": "now",
     "liked": false,
     "replies": 0,
     "retuits": 0,

@@ -37,7 +37,7 @@ const TuitsList = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-1">
-                    <img className="rounded-circle" height={48} alt={"avatarIcon"} src={`./images/${tuit.image}`}/>
+                    <img className="rounded-circle" height={48} alt={"avatarIcon"} src={`/images/${tuit.image}`}/>
                 </div>
                 <div className="col-10">
                     <span className="m-lg-2 text-black fw-bold">{tuit.userName} </span> <i className="fas fa-check-circle fa-check-circle-override " style={{color:"blue"}}/> <span className="text-secondary">{tuit.handle}</span><span className="text-secondary"> . {tuit.time}</span>
