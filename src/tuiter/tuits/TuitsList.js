@@ -4,7 +4,6 @@ import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
 import {deleteTuit, handleLike} from "./tuits-reducer";
 
-
 const TuitsList = (
     {
         tuit  = {
