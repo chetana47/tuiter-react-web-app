@@ -13,7 +13,7 @@ const HomeScreen = () => {
             setRes(response);
             console.log(response,response.data[0].topic);
         };
-        getData()
+        getData().then(r => console.log("Promise Returned"))
     }, []);
     return(
         <ul className="list-group justify-content-center" style={{width:"700px"}}>
